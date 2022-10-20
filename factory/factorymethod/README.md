@@ -1,15 +1,13 @@
 ## Factory Method Pattern
 
 - 어떤 인스턴스를 만들지는 서브클래스에서 결정
+- Static Factory Method : 객체 생성의 역할을 하는 static 메소드
 
-## 클래스 설명
+## Static Factory Method Naming Convention
 
-### Creator 클래스
-
-- PizzaStore : 추상 생성자 클래스로, 추상 팩토리 메소드가 정의만 되어있고, 구현되어 있지 않음
-- *PizzaStore : 구상 생성자 클래스로, 추상 팩토리 메소드를 오버라이딩 하여 구현
-
-### Product 클래스
-
-- Pizza : 추상 제품 클래스
-- *Pizza : 구상 제품 클래스
+- from() : 하나의 매개 변수를 받아서 인스턴스를 생성하여 반환
+- of() : 여러 개의 매개 변수를 받아서 인스턴스를 생성하여 반환
+- getInstance() : 인스턴스를 생성하여 반환
+- newInstance() : 항상 새로운 인스턴스를 생성하여 반환
+- getType : 특정 타입의 인스턴스를 생성하여 반환
+- newType : 특정 타입의 새로운 인스턴스를 생성하여 반환
