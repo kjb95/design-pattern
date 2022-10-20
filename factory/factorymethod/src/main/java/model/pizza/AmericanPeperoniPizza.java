@@ -1,14 +1,10 @@
 package model.pizza;
 
-public class AmericanPeperoniPizza implements Pizza {
+public class AmericanPeperoniPizza extends AbstractPizza {
 
     @Override
     public void prepare() {
         System.out.println("American Peperoni Pizza Prepare!");
     }
 
-    @Override
-    public void bake() {
-        System.out.println("American Peperoni Pizza Bake!");
-    }
 }
