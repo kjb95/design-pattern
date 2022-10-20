@@ -1,21 +1,17 @@
 package model;
 
-import model.pizza.APizza;
-import model.pizza.BPizza;
-import model.pizza.CPizza;
+import model.pizza.CheesePizza;
+import model.pizza.PepperoniPizza;
 import model.pizza.Pizza;
 
 public class SimplePizzaFactory {
 
     public Pizza createPizza(String type) {
-        if (type.equals("A")) {
-            return new APizza();
+        if (type.equals("cheese")) {
+            return new CheesePizza();
         }
-        else if (type.equals("B")) {
-            return new BPizza();
-        }
-        else if (type.equals("C")) {
-            return new CPizza();
+        else if (type.equals("pepperoni")) {
+            return new PepperoniPizza();
         }
         return null;
     }
